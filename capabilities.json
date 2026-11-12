@@ -1,0 +1,145 @@
+
+{
+    "dataRoles": [
+        {
+            "name": "category",
+            "kind": "Grouping",
+            "displayName": "Product name"
+        },
+        {
+            "name": "measure",
+            "kind": "Measure",
+            "displayName": "Product price"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {}
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "measure"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": [],
+    "objects": {
+        "content": {
+            "displayName": "Content",
+            "properties": {
+                "showTitle": {
+                    "type": { "bool": true }
+                },
+                "title": {
+                    "type": { "text": true }
+                },
+                "showSubtitle": {
+                    "type": { "bool": true }
+                },
+                "subtitle": {
+                    "type": { "text": true }
+                },
+                "showProductName": {
+                    "type": { "bool": true }
+                },
+                "showPrice": {
+                    "type": { "bool": true }
+                }
+            }
+        },
+        "colors": {
+            "displayName": "Colors",
+            "properties": {
+                "backgroundColor": {
+                    "type": {
+                        "fill": {
+                            "solid": { "color": true }
+                        }
+                    }
+                },
+                "titleColor": {
+                    "type": {
+                        "fill": {
+                            "solid": { "color": true }
+                        }
+                    }
+                },
+                "subtitleColor": {
+                    "type": {
+                        "fill": {
+                            "solid": { "color": true }
+                        }
+                    }
+                },
+                "productNameColor": {
+                    "type": {
+                        "fill": {
+                            "solid": { "color": true }
+                        }
+                    }
+                },
+                "priceColor": {
+                    "type": {
+                        "fill": {
+                            "solid": { "color": true }
+                        }
+                    }
+                },
+                "separatorColor": {
+                    "type": {
+                        "fill": {
+                            "solid": { "color": true }
+                        }
+                    }
+                }
+            }
+        },
+        "animation": {
+            "displayName": "Animation",
+            "properties": {
+                "speed": {
+                    "type": { "numeric": true }
+                },
+                "reverseDirection": {
+                    "type": { "bool": true }
+                },
+                "pauseOnHover": {
+                    "type": { "bool": true }
+                }
+            }
+        },
+        "typography": {
+            "displayName": "Typography",
+            "properties": {
+                "titleFontSize": {
+                    "type": { "numeric": true }
+                },
+                "subtitleFontSize": {
+                    "type": { "numeric": true }
+                },
+                "productFontSize": {
+                    "type": { "numeric": true }
+                },
+                "priceFontSize": {
+                    "type": { "numeric": true }
+                },
+                "borderRadius": {
+                    "type": { "numeric": true }
+                }
+            }
+        }
+    }
+}

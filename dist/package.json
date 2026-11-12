@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.1",
+		"author": {"name":"Hammami Asma","email":"hammami.asma@outlook.com"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/productMarquee.pbiviz.json"
+			}
+		],
+		"visual": {"name":"productMarquee","displayName":"ProductMarquee","guid":"productMarquee","visualClassName":"Visual","version":"1.0.0.1","description":"Animated scrolling ticker displaying product names and prices","supportUrl":"https://community.fabric.microsoft.com/","gitHubUrl":"https://github.com/"},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}

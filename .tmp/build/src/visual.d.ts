@@ -1,0 +1,34 @@
+import powerbi from "powerbi-visuals-api";
+import "./../style/visual.less";
+import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
+import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+import IVisual = powerbi.extensibility.visual.IVisual;
+export declare class Visual implements IVisual {
+    private target;
+    private events;
+    private formattingSettings;
+    private formattingSettingsService;
+    private container;
+    private header;
+    private titleElement;
+    private subtitleElement;
+    private viewport;
+    private track;
+    private animationFrame;
+    private position;
+    private previousTime;
+    private groupWidth;
+    private paused;
+    private resizeObserver;
+    private speed;
+    private reverseDirection;
+    private pauseOnHover;
+    constructor(options: VisualConstructorOptions);
+    update(options: VisualUpdateOptions): void;
+    private applyFormattingSettings;
+    private createGroup;
+    private showMessage;
+    private measure;
+    private animate;
+    getFormattingModel(): powerbi.visuals.FormattingModel;
+}
